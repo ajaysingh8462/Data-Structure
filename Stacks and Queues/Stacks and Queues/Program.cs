@@ -65,6 +65,21 @@ namespace Stacks_and_Queues
                         queue.Enqueue(30);
                         queue.Enqueue(70);
                         queue.Display();
+                        Console.WriteLine("Enter any key for Dequeue value");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        queue.Dequeue();
+                        queue.Display();
+                        Console.WriteLine("Enter any key for Dequeue next value");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        queue.Dequeue();
+                        queue.Display();
+                        Console.WriteLine("Enter any key for Dequeue next value");
+                        Console.ReadKey();
+                        Console.WriteLine();
+                        queue.Dequeue();
+                        queue.Display();
                         break;
                     default:
                         Console.WriteLine("Enter Valid option");

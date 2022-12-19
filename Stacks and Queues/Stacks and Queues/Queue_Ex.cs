@@ -39,5 +39,15 @@ namespace Stacks_and_Queues
                 temp = temp.next;
             }
         }
+        public void Dequeue()
+        {
+            if (front == null)
+            {
+                Console.WriteLine("Queue is empty");
+
+            }
+            Console.WriteLine("{0} element is Dequeed", front.data);
+            front = front.next;
+        }
     }
 }
