@@ -14,7 +14,7 @@ namespace Stacks_and_Queues
             while (flag)
             {
                 Console.WriteLine("Welcome to stacks and queues");
-                Console.WriteLine("1. Stacks" );
+                Console.WriteLine("1. Stacks"+"\n" + "2.Queues" );
                 Console.WriteLine("Enter The Above Mention Option");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
@@ -58,10 +58,19 @@ namespace Stacks_and_Queues
                         Console.WriteLine();
                         stack.pop();
                         stack.Display();
-
-
+                        break;
+                    case 2:
+                        Queue_Ex queue = new Queue_Ex();
+                        queue.Enqueue(56);
+                        queue.Enqueue(30);
+                        queue.Enqueue(70);
+                        queue.Display();
+                        break;
+                    default:
+                        Console.WriteLine("Enter Valid option");
                         break;
                 }
+                
 
             }
                         
