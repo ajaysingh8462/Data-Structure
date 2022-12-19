@@ -11,9 +11,9 @@ namespace Linked_List
         public static void Main(string[] args)
         {
             Linked_list ls = new Linked_list();
-            ls.Addnote(56);
-            ls.Addnote(30);
             ls.Addnote(70);
+            ls.Addnote(30);
+            ls.Addnote(56);
             ls.Display();
 
         }
