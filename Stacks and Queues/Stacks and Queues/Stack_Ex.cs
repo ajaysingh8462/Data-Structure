@@ -39,5 +39,30 @@ namespace Stacks_and_Queues
                 temp = temp.next;
             }
         }
+        public void peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is emmpty");
+
+            }
+            else
+            {
+                Console.WriteLine("{0} is in the top stack ", top.data);
+            }
+        }
+        public void pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty deletion is not possible");
+            }
+            else
+            {
+                Console.WriteLine("Value popped is {0}", top.data);
+                top = top.next;
+            }
+        }
+       
     }
 }
