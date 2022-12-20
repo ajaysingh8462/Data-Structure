@@ -113,6 +113,23 @@ namespace Linked_List
             }
             NewNode.next = null;
         }
+        public int Search(int value)
+        {
+            node Node = this.head;
+            if (Node == null)
+                return -1;
+            int count = 0;
+            while (Node != null)
+            {
+                if (Node.data == value)
+                {
+                    return count;
+                }
+                Node = Node.next;
+                count++;
+            }
+            return count;
+        }
 
     }
 }
