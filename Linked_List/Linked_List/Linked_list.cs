@@ -87,5 +87,14 @@ namespace Linked_List
             prev.next = newestNode;
             return this.head;
         }
+        public void DeleteFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Linkedlist is empty");
+            }
+            this.head = this.head.next;
+
+        }
     }
 }

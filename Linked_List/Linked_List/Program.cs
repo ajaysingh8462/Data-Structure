@@ -15,7 +15,7 @@ namespace Linked_List
             while (flag)
             {
                 Console.WriteLine("Welcome to Linked List Operations");
-                Console.WriteLine(" 1. Add LinkedList\n 2. Add data in reverse order\n 3. Insert data at particular position ");
+                Console.WriteLine(" 1. Add LinkedList\n 2. Add data in reverse order\n 3. Insert data at particular position\n 4. Delete First Node ");
                 Console.WriteLine("Enter above mention option");
                 int option = Convert.ToInt32(Console.ReadLine());
 
@@ -25,6 +25,7 @@ namespace Linked_List
                         ls.Addnote(56);
                         ls.Addnote(30);
                         ls.Addnote(70);
+                        ls.Display();
                         break;
 
                     case 2:
@@ -40,6 +41,13 @@ namespace Linked_List
                         ls.Display();
                         break;
                     case 4:
+                        ls.Addnote(56);
+                        ls.Addnote(30);
+                        ls.Addnote(70);
+                        ls.DeleteFirst();
+                        ls.Display();
+                        break;
+                    case 5:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
