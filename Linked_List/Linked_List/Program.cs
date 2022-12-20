@@ -59,7 +59,7 @@ namespace Linked_List
                         ls.Addnote(56);
                         ls.Addnote(30);
                         ls.Addnote(70);
-                        int a = ls.Search(56);
+                        int a = ls.Search(30);
                         Console.WriteLine("The Position of Node with value 30 in LinkedList is " + a);
                         break;
                     case 7:
