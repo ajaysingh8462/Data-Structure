@@ -96,5 +96,23 @@ namespace Linked_List
             this.head = this.head.next;
 
         }
+        public void DeleteLast()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linkedlist is empty");
+            }
+            if (head.next == null)
+            {
+                head = null;
+            }
+            node NewNode = head;
+            while (NewNode.next.next != null)
+            {
+                NewNode = NewNode.next;
+            }
+            NewNode.next = null;
+        }
+
     }
 }
